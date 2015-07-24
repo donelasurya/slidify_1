@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Amount accumulated based on Compound Interest</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Amount accumulated based on Compound Interest">
+  <meta name="author" content="Surya">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Amount accumulated based on Compound Interest</h1>
+    <h2>Description</h2>
+    <p>Surya<br/>Engineer</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Introduction</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This Shiny Application is used to find the Compound interest and finally the total amount accumulated for a given principal, interest rate, no of times compounded per year and the time in years</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Inputs to the Application</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>User needs to enter the following Inputs :</p>
+
+<p>1) Principal, P</p>
+
+<p>2) Rate of Interest, r</p>
+
+<p>3) No of time compounded per year, n</p>
+
+<p>4) Time period in years, t</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Formulation</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Following is the textbook formulation for Compound interest and Amount accumulated </p>
+
+<p>Compound Interest = P * (1 + r/ n )<sup>r*t</sup> - P</p>
+
+<p>Amount Accumulated = P * (1 + r/ n )<sup>r*t</sup></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Example</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">P = 1e+05
+r = 0.5
+n = 2
+t = 1
+Compound_interest = P * (1 + r/n)^(r * t) - P
+Amount_accumulated = P * (1 + r/n)^(r * t)
+print(paste(&quot;Compound Interest is &quot;, as.integer(Compound_interest), sep = &quot;Rs.&quot;))
+</code></pre>
+
+<pre><code>## [1] &quot;Compound Interest is Rs.11803&quot;
+</code></pre>
+
+<pre><code class="r">print(paste(&quot;Amount accumulated is  &quot;, as.integer(Amount_accumulated), sep = &quot;Rs.&quot;))
+</code></pre>
+
+<pre><code>## [1] &quot;Amount accumulated is  Rs.111803&quot;
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Introduction'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Inputs to the Application'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Formulation'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Example'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
